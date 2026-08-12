@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - KSR Jewellery</title>
+    <link rel="stylesheet" href="css styles/home.css">
+    <link rel="stylesheet" href="css styles/login.css">
+</head>
+<body style="background: #f8f9fa; padding: 20px;">
+    <div style="background: linear-gradient(135deg, #1e1e24, #2b2d42); color: #ffd700; padding: 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+        <h2>KSR Jewellery Admin Dashboard</h2>
+        <button onclick="openModal()" style="padding: 10px 20px; background: #d4af37; color: #fff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">+ Add New Stock Picture</button>
+    </div>
+
+    <div style="background: #fff; margin-top: 20px; padding: 20px; border-radius: 8px;">
+        <h3>Manage Stock Items</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+            <thead>
+                <tr style="background: #f1f3f5; text-align: left;">
+                    <th style="padding: 10px;">Picture</th>
+                    <th style="padding: 10px;">Title</th>
+                    <th style="padding: 10px;">Category</th>
+                    <th style="padding: 10px;">Price (₹)</th>
+                    <th style="padding: 10px;">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="adminTableBody"></tbody>
+        </table>
+    </div>
+
+    <div id="addModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+        <div style="background:#fff; padding:30px; border-radius:8px; width:400px;">
+            <h3>Add Jewellery Stock & Picture</h3>
+            <form id="stockForm" style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
+                <input type="text" id="title" placeholder="Title" required style="padding:8px;">
+                <select id="category" style="padding:8px;">
+                    <option value="Bridal Set">Bridal Set</option>
+                    <option value="Necklace & Haram">Necklace & Haram</option>
+                    <option value="Pearl Set">Pearl Set</option>
+                </select>
+                <input type="number" id="price" placeholder="Price (₹)" required style="padding:8px;">
+                <label>Option to upload new stock picture:</label>
+                <input type="file" id="picture" accept="image/*">
+                <input type="text" id="imageUrl" placeholder="Or Image URL" style="padding:8px;">
+                <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px;">
+                    <button type="button" onclick="closeModal()">Cancel</button>
+                    <button type="submit" style="background:#d4af37; color:#fff; padding:8px 15px; border:none; cursor:pointer;">Save Stock</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>

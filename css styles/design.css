@@ -1,0 +1,145 @@
+.service {
+    background-color: #ffffff;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    color: rgb(255, 249, 218);
+    text-shadow: 1px 1px 3px rgba(255, 235, 122, 0.619);
+    font-size: 100px;
+    position: relative;
+}
+
+.headline2 {
+    position: absolute;
+    font-size: 36px;
+    padding-top: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.619);
+}
+
+.collection {
+    background-color: rgb(255, 253, 242);
+    min-height: 500px;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.whitebackground {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.maingrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.jewel {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jewel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.jewelimg {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.titleback {
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.buttonsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.wishlist-btn {
+    background: #ffffff;
+    border: 1px solid #ff6d85;
+    color: #ff6d85;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffe6eb;
+}
+
+
+.cart {
+    border: 1px solid rgb(255, 245, 192);
+    background-color: rgba(255, 244, 181, 0.4);
+    box-shadow: 1px 1px 10px rgba(248, 219, 56, 0.3) inset;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart:hover {
+    background-color: #ff6d85;
+    color: #ffffff;
+    border-color: #ff6d85;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .whitebackground {
+        padding: 20px;
+        width: 95%;
+    }
+    .headline {
+        font-size: 60px;
+    }
+    .headline2 {
+        font-size: 24px;
+    }
+}

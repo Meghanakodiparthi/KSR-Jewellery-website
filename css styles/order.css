@@ -1,0 +1,106 @@
+
+.header-nav-btn {
+    background: rgba(255, 113, 137, 0.2);
+    border: 1px solid rgb(255, 113, 137);
+    border-radius: 8px;
+    padding: 6px 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white !important;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+.header-nav-btn.active, .header-nav-btn:hover {
+    background: rgba(255, 109, 133, 0.8);
+}
+.order-page-layout {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+@media (max-width: 850px) {
+    .order-page-layout {
+        grid-template-columns: 1fr;
+    }
+}
+.order-card-panel, .checkout-card-panel {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+.order-card-panel h2, .checkout-card-panel h2 {
+    color: #ff6d85;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
+}
+.order-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.order-row img {
+    width: 60px; height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.order-summary-box {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+    text-align: right;
+}
+.form-group {
+    margin-bottom: 18px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+.pay-method-card {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pay-method-card.selected {
+    border-color: #ff6d85;
+    background-color: #fff0f3;
+}
+.place-order-btn {
+    width: 100%;
+    background: #ff6d85;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.place-order-btn:hover {
+    background: #e0556c;
+}

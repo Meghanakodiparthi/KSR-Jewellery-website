@@ -1,0 +1,221 @@
+<html>
+<head>
+  <title>KSR jewellery</title>
+  <link rel="stylesheet" href="css styles/home.css">
+  <link rel="stylesheet" href="css styles/about.css">
+  <link rel="stylesheet" href="css styles/design.css">
+  <link rel="stylesheet" href="css styles/service.css">
+  <link rel="stylesheet" href="css styles/contact.css">
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="body">
+  <div class="image"><img class="main" src="pictures/image6.png" onerror="this.src='pictures/hipchain.jpg';">
+    <div class="head">
+      <div class="left"><h1 class="h1">KSR Jewellery</h1></div>
+      <div class="middle">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#design">DESIGN</a>
+        <a href="#service">SERVICE</a>
+        <a href="#contact">CONTACT</a>
+      </div>  
+      <div class="right">
+        <input class="search" id="searchInput" type="text" placeholder="Type to Search">
+        <button class="button" id="searchInput">Search</button>
+		<a href="wishlist.html" class="header-icon-btn">
+		    <p style="color: hotpink; font-size: 24px;">&hearts;</p><span class="badge" id="wishlistBadge">0</span>
+		  </a>
+		  <a href="order.html" class="header-icon-btn">
+		      &#128091;<span class="badge" id="cartBadge">0</span>
+		    </a>
+        <div><a href="login.html" title="Login / Profile"><img class="megha" src="pictures/meghana.jpg" onerror="this.src='https://via.placeholder.com/50';"></a></div>
+      </div>
+    </div>
+    <div class="para" id="home">
+      <div><h1 style="color:white; display:flex; text-shadow: 2px -2px 10px rgb(0, 0, 0); width:700px; font-size:50px;">KSR Jewellery <br>Collections</h1></div>
+      <h3 style="color:white; text-shadow: 2px -2px 10px rgb(0, 0, 0); display:flex; margin-top:0px; line-height: 30px;">	  Embress the beauty of women, with the luxeries fancy crystal stones,With n numbers of
+	          collections.<br>For more collection get check it out with our website .</h3>
+      <div class="view" onclick="document.getElementById('design').scrollIntoView({behavior:'smooth'});">View More</div>
+    </div>
+  </div>
+
+  <div class="grid" id="about">
+    <div class="grid1">
+      <h1 class="about">ABOUT<br>US</h1>
+      <div style="line-height: 24px; text-align:start; position:absolute; bottom:0; left:0; right:0; font-family: roboto,'arial'; padding-right:36px; margin-top:0px; flex:1;">	  Welcome to KSR Group Collections, founded with a passion for bringing exceptional jewelry to the fashion
+	          world. Our journey began on November 24, 2024, with a singular vision: to create a collection that celebrates
+	          beauty, quality, and individuality. As the owner, my goal is to embrace every facet of style, offering pieces
+	          that not only complement your look but also tell your personal story.</div>
+    </div>
+    <div class="grid2">
+      <p style="line-height: 24px; text-align:start; display:flex; font-family: roboto,'arial'; padding-right:30px;">		At KSR Group Collections, we believe that every piece of jewelry is a statement. Our commitment to craftsmanship
+		        and design excellence allows us to offer a diverse range of collections. We pride ourselves on meticulously
+		        selecting each item to ensure it meets the highest standards of beauty and quality.</p>
+      <div style="background-color:rgb(255, 251, 209); border-top-left-radius: 80px; display:flex; position:relative; flex:1; height:100%; justify-content: end; align-items:end;"><img class="image2" src="pictures/image8.png"></div>
+    </div>
+  </div>
+
+  
+  <div class="service" id="design">
+    <h1 class="headline">Collections</h1>
+    <h4 class="headline2">whats new</h4>
+  </div>
+
+  <div class="collection">
+    <div class="whitebackground">
+      <div class="maingrid" id="jewelryGrid">
+      
+        <div class="jewel">
+          <div><img class="jewelimg" src="pictures/jewl2.jpg" onerror="this.src='pictures/hipchain.jpg';"></div>
+          <div class="titleback">
+            <p style="margin-top:6px; margin-bottom:4px; font-weight:bold; font-size:16px;">Bridal Set</p>
+            <p style="font-size:14px; color:#d4af37; margin-bottom:8px; font-weight:bold;">&#x20B9; 45,000</p>
+            <div class="buttonsection">
+              <button class="wishlist-btn" onclick="addToWishlist(1, 'Bridal Set', 45000, 'pictures/jewl2.jpg')" title="Add to Wishlist">&#9829;</button>
+              <button class="cart" onclick="addToCart(1, 'Bridal Set', 45000, 'pictures/jewl2.jpg')">Add to cart</button>
+              <button class="cart" onclick="quickBuy(1, 'Bridal Set', 45000, 'pictures/jewl2.jpg')">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="jewel">
+          <div><img class="jewelimg" src="pictures/jewl3.jpg" onerror="this.src='pictures/hipchain.jpg';"></div>
+          <div class="titleback">
+            <p style="margin-top:6px; margin-bottom:4px; font-weight:bold; font-size:16px;">Lakshmi Haram</p>
+            <p style="font-size:14px; color:#d4af37; margin-bottom:8px; font-weight:bold;">&#x20B9; 35,000</p>
+            <div class="buttonsection">
+              <button class="wishlist-btn" onclick="addToWishlist(2, 'Lakshmi Haram', 35000, 'pictures/jewl3.jpg')" title="Add to Wishlist">&#9829;</button>
+              <button class="cart" onclick="addToCart(2, 'Lakshmi Haram', 35000, 'pictures/jewl3.jpg')">Add to cart</button>
+              <button class="cart" onclick="quickBuy(2, 'Lakshmi Haram', 35000, 'pictures/jewl3.jpg')">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="jewel">
+          <div><img class="jewelimg" src="pictures/jewl5.jpg" onerror="this.src='pictures/hipchain.jpg';"></div>
+          <div class="titleback">
+            <p style="margin-top:6px; margin-bottom:4px; font-weight:bold; font-size:16px;">Pearl Set</p>
+            <p style="font-size:14px; color:#d4af37; margin-bottom:8px; font-weight:bold;">&#x20B9; 18,000</p>
+            <div class="buttonsection">
+              <button class="wishlist-btn" onclick="addToWishlist(3, 'Pearl Set', 18000, 'pictures/jewl5.jpg')" title="Add to Wishlist">&#9829;</button>
+              <button class="cart" onclick="addToCart(3, 'Pearl Set', 18000, 'pictures/jewl5.jpg')">Add to cart</button>
+              <button class="cart" onclick="quickBuy(3, 'Pearl Set', 18000, 'pictures/jewl5.jpg')">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="jewel">
+          <div><img class="jewelimg" src="pictures/jewl6.jpg" onerror="this.src='pictures/hipchain.jpg';"></div>
+          <div class="titleback">
+            <p style="margin-top:6px; margin-bottom:4px; font-weight:bold; font-size:16px;">Pearl long Haram</p>
+            <p style="font-size:14px; color:#d4af37; margin-bottom:8px; font-weight:bold;">&#x20B9; 28,000</p>
+            <div class="buttonsection">
+              <button class="wishlist-btn" onclick="addToWishlist(4, 'Pearl long Haram', 28000, 'pictures/jewl6.jpg')" title="Add to Wishlist">&#9829;</button>
+              <button class="cart" onclick="addToCart(4, 'Pearl long Haram', 28000, 'pictures/jewl6.jpg')">Add to cart</button>
+              <button class="cart" onclick="quickBuy(4, 'Pearl long Haram', 28000, 'pictures/jewl6.jpg')">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="jewel">
+          <div><img class="jewelimg" src="pictures/jewl7.jpg" onerror="this.src='pictures/hipchain.jpg';"></div>
+          <div class="titleback">
+            <p style="margin-top:6px; margin-bottom:4px; font-weight:bold; font-size:16px;">Fancy Haram</p>
+            <p style="font-size:14px; color:#d4af37; margin-bottom:8px; font-weight:bold;">&#x20B9; 22,000</p>
+            <div class="buttonsection">
+              <button class="wishlist-btn" onclick="addToWishlist(5, 'Fancy Haram', 22000, 'pictures/jewl7.jpg')" title="Add to Wishlist">&#9829;</button>
+              <button class="cart" onclick="addToCart(5, 'Fancy Haram', 22000, 'pictures/jewl7.jpg')">Add to cart</button>
+              <button class="cart" onclick="quickBuy(5, 'Fancy Haram', 22000, 'pictures/jewl7.jpg')">Buy</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="new" id="service">
+    <div class="column1">	<div style="color:gray;
+	          margin-bottom:10px;"><strong>100% GENUINE</strong></div>		<div style="color:gray;
+		                  line-height: 20px;
+		                  "><br>	All our jewelry products are<br>accompanied by a valid certificate from <br>an independent
+	        international lab<br>attesting the quality of the stones.</div></div>
+			
+    <div class="column2">			<div style="color:gray;
+			          margin-bottom:10px;"><strong>30 DAYS FULL REFUND</strong></div>
+			      <div style="color:gray;
+			           line-height: 20px;">We value the trust you have placed<br>on us buying your favorite<br>jewelry from our
+			        site</div></div>
+					
+    <div class="column1"><div style="color:gray;
+					          margin-bottom:10px;"><strong>FREE SHIPPING</strong></div>
+	<div style="color:gray;line-height: 20px;">We take extreme care to ensure that<br>it is delivered to you at your<br>doorstep, safely packedand fully insured </div></div>
+	
+    <div class="column2">	<div style="color:gray;
+	          margin-bottom:10px;"><strong>FAQ & HELP</strong></div>
+	      <div style="color:gray;
+	                   line-height: 20px;
+	                   "> A doubt,a query&quest; <br>
+	        <center>reach us in</center>+919_ _ _ _ _ _ _09
+	      </div></div>
+  </div>
+
+<div class="contact" id="contact">
+    <div class="contactflex">
+      <div class="contact1">
+        <div style="color: black;
+          font-size: 20px;
+          display:flex;
+          text-shadow: 1px 1px 1px rgb(118, 118, 118);">Zaamor</div>
+        <div style="color: black;
+          line-height: 30px;
+          text-shadow: 1px 1px 1px rgb(192, 192, 192);
+          margin-top:30px;"> About Us<br>Contact<br>Blog</div>
+      </div>
+      <div class="contact1">
+        <div style="color: black;
+          font-size: 20px;
+          text-shadow: 1px 1px 1px rgb(118, 118, 118);">KSR Collections</div>
+        <div style="color: black;
+          line-height: 30px;
+          text-shadow: 1px 1px 1px rgb(192, 192, 192);
+          margin-top:30px;">KSR Pendants<br>KSR Studs<br>KSR Rings<br>KSR Jewellery</div>
+      </div>
+      <div class="contact1">
+        <div style="color: black;
+          font-size: 20px;
+          text-shadow: 1px 1px 1px rgb(118, 118, 118);">Jewelry Collections</div>
+        <div style="color: black;
+          line-height: 30px;
+          text-shadow: 1px 1px 1px rgb(192, 192, 192);
+          margin-top:30px;"> Fashion Pendants<br>Fashion Earrings<br>Tourmaline Collections<br>One Gram Gold<br>Fancy
+          Bangles</div>
+      </div>
+      <div class="contact1">
+        <div style="color: black;
+          font-size: 20px;
+          text-shadow: 1px 1px 1px rgb(118, 118, 118);">Help</div>
+        <div style="color: black;
+          line-height: 30px;
+          text-shadow: 1px 1px 1px rgb(192, 192, 192);
+          margin-top:30px;">FAQ<br>Shipping & Order Tracking<br>Return Policy<br>Privacy Policy<br>T&C</div>
+      </div>
+      <div class="contact1">
+        <div style="color: black;
+          font-size: 20px;
+          text-shadow: 1px 1px 1px rgb(118, 118, 118);">Contact</div>
+        <div style="color: black;
+          line-height: 30px;
+          text-shadow: 1px 1px 1px rgb(192, 192, 192);
+          margin-top:30px;">+919________09</div>
+      </div>
+    </div>
+    <div class="nextflex">
+      @2024 KSR.All Right Reserved | Term of service | Privacy Policy
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/cart_wishlist_payment.js"></script>
+</body>
+</html>
