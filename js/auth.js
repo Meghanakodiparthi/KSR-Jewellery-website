@@ -51,7 +51,7 @@ async function handleLogin(e) {
             if (data.user.role === 'ADMIN') {
                 window.location.href = 'admin.html';
             } else {
-                window.location.href = 'home.html';
+                window.location.href = 'index.html';
             }
         } else {
             alert(data.message || 'Invalid email or password.');
@@ -67,7 +67,7 @@ async function handleLogin(e) {
         } else {
             localStorage.setItem('ksr_user', JSON.stringify({ name: email.split('@')[0], email: email, role: 'USER' }));
             alert('Login Successful!');
-            window.location.href = 'home.html';
+            window.location.href = 'index.html';
         }
     }
 }
