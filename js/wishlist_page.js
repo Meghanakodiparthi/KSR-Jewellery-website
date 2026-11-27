@@ -20,7 +20,7 @@ function renderWishlist() {
     if (!grid) return;
 
     if (wishlist.length === 0) {
-        grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:50px; color:#777;">Your Wishlist is empty. <a href="home.html#design" style="color:#ff6d85; font-weight:bold;">Browse Jewelry Collections</a></div>';
+        grid.innerHTML = '<div style="grid-column:1/-1; text-align:center; padding:50px; color:#777;">Your Wishlist is empty. <a href="index.html#design" style="color:#ff6d85; font-weight:bold;">Browse Jewelry Collections</a></div>';
         return;
     }
 
